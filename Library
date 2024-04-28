@@ -3055,10 +3055,10 @@ function Library:CreateWindow(...)
     });
 
     function Window:SetWindowTitle(Title)
-        text = "dev-hook"
+        Title = "dev-hook"
         while wait() do
         for i = 1, #text do
-            WindowLabel.Text = string.sub(text,1,i);
+            WindowLabel.Text = string.sub(Title,1,i);
                 wait(0.4)
             end
         end
